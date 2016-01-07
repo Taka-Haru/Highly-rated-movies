@@ -1,58 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>HighlyRatedMovies</title>
+    <style>
+    </style>
+</head>
+<body>
+<h2>Highly Rated Movies</h2>
+<h3>〜今日の映画〜</h3>
+<hr>
+</body>
+</html>
+
+
 
 <?php
-//APIのURL
-$API_URL = 'https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?';
-//取得したいキーワード
-$keyword='';
-//reviewAverage:レビューの評価(平均)が高い
-//$sort='reviewAverage';
-//reviewAverage:レビュー件数
-$sort='reviewCount';
-$sort=urlencode(mb_convert_encoding($sort,'UTF-8','auto'));
-echo $sort;
-//1ページあたりの取得件数
-$hits= '6';
-//楽天ジャンルリスト(映画) 001011002
-$booksGenreId='003201';
 
-$page=1;
-
-//アプリID
-$applicationId='1008945889381802438';//自分のアプリIDを入れる
-
-//リクエストURL
-$kobo_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.$page;
-echo $kobo_url;
-//XMLを取得
-$xml=simplexml_load_string(file_get_contents($kobo_url));
-
-var_dump($xml->count);
-
-  foreach((object) $xml->Items->Item as $item){
-
-      //タイトル
-      $title=$item->title;
-
-      //著者名
-      $author=$item->author;
-      $author=str_replace('^_#^',', ',$author);//複数の場合
-
-      //楽天ブックスURL
-      $url=$item->itemUrl;
-
-      //画像のURL
-      $img=$item->largeImageUrl;
-
-      //レビュー件数
-      $reviewCount=$item->reviewCount;
-      //レビュー平均
-      $reviewAverage=$item->reviewAverage;
-
-if($reviewCount>10) {
-
-      print '<a href="'.$url.'" target="window"><img src="'.$img.'" /></a><br>';
-      print 'タイトル：'.$title.'<br>';
-      print '画像のURL：'.$img.'<br>'.'<br>';
+  //try-catchで接続エラーを取得＆表示
+  try{
+    $pdo_object=
+    new PDO('mysql:host=localhost;dbname=Challenge_db;charset=utf8',
+    'sakamoto',2591);
+  }catch(PDOException $E){
+    die('接続に失敗しました:'.$E->getMessage());
   }
-}
-?>
+
+  //SQL文を格納した文字列を定義(今回はレコード指定のSQL文)
+  $sql = "select * from movies where movie_type=1";
+
+
+  //実行とその結果を受け取れる変数を用意
+  $query = $pdo_object -> prepare($sql);
+
+  //SQLを実行
+  $query -> execute();
+
+  foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $key){
+      //var_dump($key);
+      //echo $key["ImageUrl"].'<br>';
+  ?>
+  <a href="<?php echo $key["FilmUrl"];?>" target="window"> <img src="<?php echo $key["ImageUrl"];?>"></a>
+  <!-- <img src="<?php echo $key["ImageUrl"]; ?>" width="150" height="60"> -->
+  <?php
+  }
+  //接続を切断
+  $pdo_object = null;
+  ?>
