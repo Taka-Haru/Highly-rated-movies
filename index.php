@@ -36,16 +36,34 @@
   //SQLを実行
   $query -> execute();
 
-      foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $key){
-        for($i=1; $i<=6; $i++){
-          if($key["FilmID"] == $i){?>
-      <a href="<?php echo $key["FilmUrl"];?>" target="window"> <img src="<?php echo $key["ImageUrl"];?>"></a>
 
+
+  $youga_query = $query->fetchAll(PDO::FETCH_ASSOC);
+  //var_dump($youga_query);
+
+  function shuffle_assoc($list) {
+      if (!is_array($list)) return $list;
+      $keys = array_keys($list);
+      shuffle($keys);
+      $random = array();
+      foreach ($keys as $key) {
+          $random[$key] = $list[$key];
+      }
+      return $random;
+  }
+
+  $result = shuffle_assoc($youga_query);
+
+      foreach ($result as $key){
+        for($i=1; $i<=7; $i++){
+          if($key["FilmID"] == $i){
+          ?>
+      <a href="<?php echo $key["FilmUrl"];?>" target="window"> <img src="<?php echo $key["ImageUrl"];?>"></a>
   <?php
-      //var_dump($key["FilmID"]);
           }
         }
       }
+
 
   //接続を切断
   $pdo_object = null;
