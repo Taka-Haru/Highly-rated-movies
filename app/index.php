@@ -15,8 +15,8 @@
     <nav class="globalNavi">
       <ul>
         <li class="current"><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">ホーム</a></li>
-        <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">自己紹介</a></li>
-        <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">このサイトについて</a></li>
+        <li><a href="http://localhost/develop/HighlyRatedMovies/app/introduction.php">自己紹介</a></li>
+        <li><a href="http://localhost/develop/HighlyRatedMovies/app/explanation.php">このサイトについて</a></li>
         <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">お問い合わせ</a></li>
       </ul>
     </nav>
@@ -28,11 +28,11 @@
 
       <article　class="articleDetail">
         <header class="articleDetailHead">
-          <h1 class="pageTitle">今日のピックアップ映画</h1>
+          <h1 class="pageTitle">本日オススメの作品</h1>
         </header>
 
       <section>
-        <h3 class="heading-typeB">〜本日オススメの作品〜</h3>
+        <h3 class="heading-typeB">〜今日の映画〜</h3>
         <!-- <figure> -->
           <img src="../image/img_01_01.jpg" alt="ランダムで映画ジャケが表示されます" width="720" height="390">
             <figcaption>※上記映画のタイトル</figcaption>
@@ -65,21 +65,8 @@
             </tr>
           </table>
         </section>
-
-        <footer class="articleDetailFoot">
-          <aside>
-            <p>〜サイト作成協力〜</p>
-            <h2 class="heading-typeC">グルーヴ・ギア株式会社</h2>
-            <p>地下鉄九段下駅より徒歩１分</p>
-            <ul>
-              <li><a href="http://www.groove-gear.jp/" target="_blank">http://www.groove-gear.jp/</a></li>
-              <li><a href="https://camp.geekjob.jp/?_ga=1.84169246.649395329.1446601110" target="_blank">GeekJobCamp ページ</a></li>
-            </ul>
-            <P>是非あなたもプログラミングキャンプに参加しませんか？</p>
-          </aside>
-        </footer>
       </article>
-<!-- pageBodyタグ終了 --></div>
+<!-- pageBodyMainタグ終了 --></div>
 
   <div id="pageBodySub">
     <section class="newList">
