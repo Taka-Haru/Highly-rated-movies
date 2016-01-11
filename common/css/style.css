@@ -1,79 +1,242 @@
-p{
+body{
+  color: #333333;
+}
+
+/*リンク*/
+a{color:#999966;}
+a:hover{color: #996600;}
+/*a:visited{color: #666666;}*/
+
+/*ページの先頭に戻る処理*/
+.pagetop{
+  font-size: 12px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.pagetop a{
+  background-image: url("../../image/ico_pagetop.png");
+  background-repeat: no-repeat;
+  background-position: 0 60%;
+  padding-left: 7px;
+}
+
+
+/*ページ*/
+#page{
+  width:980px;
+  margin: 0 auto;
+}
+
+/*ページヘッダー*/
+#pageHead #siteTitle{
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  font-family:cursive;
+}
+
+#pageHead #catchcopy{
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 3px;
+  padding:0 20px;
+  font-family:cursive;
+}
+
+/*グローバルナビ*/
+#pageHead .globalNavi{
+  border: solid #CCCCCC;
+  border-width: 1px 0;
+  padding: 10px 0;
+}
+
+#pageHead .globalNavi ul{
+  margin: 0;
+  padding: 0;
+}
+
+#pageHead .globalNavi ul:after{
+  content: "";
+  clear:both;
+  display: block;
+}
+
+
+#pageHead .globalNavi ul li{
+  list-style: none;
+  width:245px;
+  float: left;
+  border-left: solid 1px #CCCCCC;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
   font-size: 14px;
   line-height: 1.429;
 }
 
+#pageHead .globalNavi ul li:first-child{
+  border-left: none;
+}
+
+#pageHead .globalNavi ul li a{
+  color:inherit;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+#pageHead .globalNavi ul li a:hover,
+#pageHead .globalNavi ul li.current a{
+  background-color: #F2F2E5;
+}
+
+#pageHead .globalNavi ul li a:hover{
+  background-color: #F2F2E5;
+}
+
+/*ページフッター*/
+#pageFoot{
+  border-top: solid 1px #CCCCCC;
+  margin-top: 15px;
+}
+
+
+#pageFoot #copyright small{
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/*ページボディ全体*/
+#pageBody{
+  margin-top: 30px;
+  /*background-color: #FFCC66;
+  border: solid 10px #FF0000;*/
+}
+
+#pageBody:after{
+  content:"";
+  clear:both;
+  display: block;
+}
+
+/*ページボディメイン*/
+#pageBodyMain{
+  width: 720px;
+  float: left;
+  /*background-color: #66CCFF;*/
+}
+
+/*ページボディサブ*/
+#pageBodySub{
+  width: 220px;
+  float: right;
+  /*background-color: #99FF66;*/
+}
+
+/*-----------------サブカラムの装飾-------------------*/
+/*サブカラムの見出し*/
+#pageBodySub h2{
+  font-size: 16px;
+  line-height: 1.375;
+  padding: 5px;
+  margin-top:0;
+  border-bottom: solid 1px #CCCCCC;
+
+}
+/*おしらせ内容*/
+#pageBodySub .newList ul{
+  list-style: none;
+  padding: 0;
+}
+
+#pageBodySub .newList ul li{
+  font-size: 12px;
+  line-height: 1.5;
+  margin:10px 5px;
+}
+
+#pageBodySub .newList ul li time{
+  font-weight: bold;
+  display: block;
+}
+
+/*-----------------メインカラムの装飾-------------------*/
+
+#pageBodyMain p{
+  font-size: 12px;
+  line-height: 1.429;
+}
+
 /*リスト*/
-ul li{
+#pageBodyMain ul li{
   font-size: 16px;
   list-style-type: circle;
   line-height: 1.375;
 }
 
 /*表*/
-table{
+#pageBodyMain table{
     font-size: 16px;
     line-height: 1.375;
     border: 1px solid #CCCCCC;
     width: 100%;
 }
 
-table th,
-table td{
+#pageBodyMaintable th,
+#pageBodyMain table td{
     border: 1px solid #CCCCCC;
     padding: 5px 10px;
     width: 80%;
 }
 
-table th{
+#pageBodyMain table th{
   background-color: #EEEEEE;
   text-align:left;
   width:20%
 }
 
-table caption{
+#pageBodyMain table caption{
   text-align: left;
   font-weight: bold;
 }
 
 
 /*見出し*/
-.pageTitle{
+#pageBodyMain .pageTitle{
   font-size: 26px;
   background-color: #F2F2E5;
   padding:5px 15px;
-  font-family:cursive;
   line-height: 1.231;
+  margin-top: 0;
 }
 
-.pageTitleSub{
+#pageBodyMain .heading-typeB{
   font-size: 16px;
-  color: #349FA6;
-  /*border-bottom: solid 1px #349FA6;*/
-  padding:0 5px;
   line-height: 1.375;
+  margin-left: 0;
 }
 
-.heading-typeC{
+#pageBodyMain .heading-typeC{
   font-size: 14px;
   border-left: solid 5px #E3E4D9;
   padding-left: 5px;
   line-height: 1.429;
 }
 
-.articleDetailHead{
+#pageBodyMain .articleDetailHead{
   border-bottom: solid 1px #CCCCCC;
   margin-bottom: 30px;
   padding-bottom: 10px;
 }
 
-.articleDetailFoot{
+#pageBodyMain .articleDetailFoot{
   padding: 10px;
   border: solid 1px #CCCCCC;
   margin-top: 10px;
 }
 
-.articleDetailFoot p{
+#pageBodyMain .articleDetailFoot p{
   font-size: 12px;
   line-height: 1.5;
 }
