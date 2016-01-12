@@ -23,67 +23,76 @@
   </header>
 
   <div id="pageBody">
-
-    <div id="pageBodyMain">
-
-      <article　class="articleDetail">
-        <header class="articleDetailHead">
-          <h1 class="pageTitle">本日オススメの作品</h1>
-        </header>
-
-      <section>
-        <h3 class="heading-typeB">〜今日の映画〜</h3>
-        <!-- <figure> -->
-          <img src="../image/img_01_01.jpg" alt="ランダムで映画ジャケが表示されます" width="720" height="390">
-            <figcaption>※上記映画のタイトル</figcaption>
-        <!-- </figure> -->
-      </section>
-
-        <section class="articleDetailBody">
-          <ul>
-            <li>あいうえお</li>
-            <li>かきくけこ</li>
-            <li>さしすせそ</li>
-            <li>たちつてと</li>
-          </ul>
-
-          <table border="1">
-            <caption>ひらがな</caption>
-            <tr>
-            <th>あ行</th>
-            <td>あいうえお</td>
-            </tr>
-
-            <tr>
-            <th>か行</th>
-            <td>かきくけこ</td>
-            </tr>
-
-            <tr>
-            <th>さ行</th>
-            <td>さしすせそ</td>
-            </tr>
-          </table>
-        </section>
-      </article>
-<!-- pageBodyMainタグ終了 --></div>
-
-  <div id="pageBodySub">
-    <section class="newList">
-      <h2>おしらせ</h2>
-      <ul>
-        <li><time datetime="2016.00.00">2016.00.00</time>
-          映画データを更新しました。</li>
-        <li><time datetime="2016.00.00">2016.00.00</time>
-          サイトデザインを一部変更しました。</li>
-      </ul>
+    <section class="mainVisual">
+      <div class="mainVisualText">
+        <h1>Today Movies</h1>
+        <p>良作映画紹介サービス<br>
+        〜何を観るか迷っているあなたへ〜</p>
+      </div>
+      <img src="../image/img_01_01.jpg" width="980" height="500" alt="ランダム画像">
     </section>
-<!-- pageBodySubタグ終了 --></div>
 
-<!-- pageBodyタグ終了 --></div>
+    <section class="portfolioIndex_A">
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/4070605/"target="window">
+          <img src="../image/StarWars4.jpg" alt="エピソード４" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/4070605/"target="window">
+          <h2>スターウォーズⅣ</h2>
+        </a>
+      </article>
 
-<!-- ページの先頭に戻る処理-->
-<p class="pagetop"><a href="#page">ページの先頭に戻る</a></p>
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/4070606/"target="window">
+          <img src="../image/StarWars5.jpg" alt="エピソード５" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/4070606/"target="window">
+          <h2>スターウォーズⅤ</h2>
+        </a>
+      </article>
+
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/4070607/"target="window">
+          <img src="../image/StarWars6.jpg" alt="エピソード６" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/4070607/"target="window">
+          <h2>スターウォーズⅥ</h2>
+        </a>
+      </article>
+    </section>
+
+      <section class="portfolioIndex_B">
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/1793720/"target="window">
+          <img src="../image/StarWars1.jpg" alt="エピソード１" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/1793720/"target="window">
+          <h2>スターウォーズⅠ</h2>
+        </a>
+      </article>
+
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/1793721/"target="window">
+          <img src="../image/StarWars2.jpg" alt="エピソード２" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/1793721/"target="window">
+          <h2>スターウォーズⅡ</h2>
+        </a>
+      </article>
+
+      <article>
+        <a href="http://books.rakuten.co.jp/rb/1793713/"target="window">
+          <img src="../image/StarWars3.jpg" alt="エピソード３" width="300" height="163">
+        </a>
+        <a href="http://books.rakuten.co.jp/rb/1793713/"target="window">
+          <h2>スターウォーズⅢ</h2>
+        </a>
+      </article>
+    </section>
+  <!-- pageBodyタグ終了 --></div>
+
+  <!-- ページの先頭に戻る処理-->
+  <p class="pagetop"><a href="#page">ページの先頭に戻る</a></p>
 
   <footer id="pageFoot">
     <p id="copyright"><small>Copyright&copy; 2016 @HighlyRatedMovies All Rights Reserved.</small></p>
