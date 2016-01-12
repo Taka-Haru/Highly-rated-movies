@@ -17,7 +17,7 @@
         <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">ホーム</a></li>
         <li><a href="http://localhost/develop/HighlyRatedMovies/app/introduction.php">自己紹介</a></li>
         <li class="current"><a href="http://localhost/develop/HighlyRatedMovies/app/explanation.php">このサイトについて</a></li>
-        <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">お問い合わせ</a></li>
+        <li><a href="http://localhost/develop/HighlyRatedMovies/app/contact.php">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
