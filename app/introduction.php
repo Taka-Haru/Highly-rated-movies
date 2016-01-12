@@ -17,7 +17,7 @@
         <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">ホーム</a></li>
         <li class="current"><a href="http://localhost/develop/HighlyRatedMovies/app/introduction.php">自己紹介</a></li>
         <li><a href="http://localhost/develop/HighlyRatedMovies/app/explanation.php">このサイトについて</a></li>
-        <li><a href="http://localhost/develop/HighlyRatedMovies/app/index.php">お問い合わせ</a></li>
+        <li><a href="http://localhost/develop/HighlyRatedMovies/app/contact.php">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -35,18 +35,16 @@
           <h3 class="heading-typeB">〜 GeekJobCamp 第一期生 〜</h3>
           <!-- <figure> -->
             <img src="../image/sub21.jpg" alt="ランダムで映画ジャケが表示されます" width="720" height="390">
-              <figcaption>※上記映画のタイトル</figcaption>
           <!-- </figure> -->
-        </section
+        </section>
 
         <section class="articleDetailBody">
-          <ul>
-            <li>　2015年の11月から、GeekJobのプログラミングキャンプに参加している27歳です。</li>
-            <li>前職は外食企業で約３年半働いてました。</li>
-            <li>　キャンプ入る前までは、インターネットってよく分からないけど便利だなってレベルでした(笑)</li>
-            <li>まだまだ、プログラミングは勿論、基本的なIT知識に疎い状態で、日々勉強の毎日です。</li>
-          </ul>
+            <p>　2015年の11月から、GeekJobのプログラミングキャンプに参加している27歳です。</p>
+            <p>前職は外食企業で約３年半働いてました。</p>
+            <p>　キャンプ入る前までは、インターネットってよく分からないけど便利だなってレベルでした(笑)</p>
+            <p>まだまだ、プログラミングは勿論、基本的なIT知識に疎い状態で、日々勉強の毎日です。</p>
         </section>
+
 
         <footer class="articleDetailFoot">
           <aside>
