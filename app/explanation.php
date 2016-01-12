@@ -46,7 +46,7 @@
             <a href="http://books.rakuten.co.jp/rb/12199326/"target="window">
               <div class="movieListText">
                 <h2>レオン</h2>
-                <p>無口で孤独な殺し屋・レオンの元に、家族を惨殺された少女マチルダが助けを求めてやってくる。奇妙な共同生活の中で、二人は徐々に心を通わせていくが…</p>
+                <p>「私が欲しいのは、愛か死よ」　　by マチルダ<br><br>「俺に必要なのは……ミルクだ」　by レオン<p>
               </div>
               <div class="movieListImage">
               <img src="../image/LEON.jpg" alt="レオン" width="300" height="163">
@@ -58,7 +58,7 @@
             <a href="http://books.rakuten.co.jp/rb/12062429/"target="window">
               <div class="movieListText">
                 <h2>ファイト・クラブ</h2>
-                <p>・ファイトクラブ ルールその１<br>ファイトクラブについて話すな。<br><br>・ファイトクラブ ルールその２<br>ファイトクラブについて話すな。</p>
+                <p>・ルールその１<br>　ファイトクラブについて話すな。<br><br>・ルールその２<br>　ファイトクラブについて話すな。</p>
               </div>
               <div class="movieListImage">
               <img src="../image/FightClub.jpg" alt="ファイト・クラブ" width="300" height="163">
@@ -70,7 +70,7 @@
             <a href="http://books.rakuten.co.jp/rb/3944412/"target="window">
               <div class="movieListText">
                 <h2>バタフライ・エフェクト</h2>
-                <p>君を救うため、ぼくは何度でも過去に戻る。全世界で大ヒットを記録した、予測不能ノンストップ・サスペンス!!精緻なパズルのように組み上げられたストーリー。サスペンスに満ち、同時にエモーショナルで感動的な愛の物語。</p>
+                <p>過去を変え、<br>必ず君を救ってみせる。<br>それがたとえ・・・</p>
               </div>
               <div class="movieListImage">
               <img src="../image/ButterflyEffect.jpg" alt="バタフライ・エフェクト" width="300" height="163">
