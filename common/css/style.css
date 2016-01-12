@@ -313,6 +313,90 @@ a:hover{color: #996600;}
   vertical-align: bottom;
 }
 
+/*-----------トップページの内容-----------------*/
+
+/*---------メインビジュアル-------------*/
+#pageBody .mainVisual{
+  position: relative;
+}
+
+#pageBody .mainVisual img{
+  vertical-align: bottom;
+}
+
+#pageBody .mainVisual .mainVisualText{
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: #FFF;
+  background-color: rgba(120, 129, 126, 0.5);
+  width: 400px;
+  padding: 15px 25px;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+#pageBody .mainVisual .mainVisualText h1{
+  font-size: 26px;
+  line-height: 1.231;
+  margin: 0;
+}
+
+/*---------------紹介DVD---------------*/
+#pageBody .portfolioIndex_A{
+  margin-top: 30px;
+}
+
+#pageBody .portfolioIndex_A:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBody .portfolioIndex_A article{
+  width: 300px;
+  float: left;
+  margin-left: 40px;
+}
+
+#pageBody .portfolioIndex_A article:first-child{
+  margin-left: 0;
+}
+
+#pageBody .portfolioIndex_A article h2{
+  font-size: 18px;
+  margin:5px 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#pageBody .portfolioIndex_B{
+  margin-top: 30px;
+}
+
+#pageBody .portfolioIndex_B:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBody .portfolioIndex_B article{
+  width: 300px;
+  float: left;
+  margin-left: 40px;
+}
+
+#pageBody .portfolioIndex_B article:first-child{
+  margin-left: 0;
+}
+
+#pageBody .portfolioIndex_B article h2{
+  font-size: 18px;
+  margin:5px 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
 /*------------「お問い合わせ」ページ------------*/
 
 #pageBody .contactForm table{
