@@ -1,5 +1,7 @@
+<?php require_once '../common/scriptUtil.php';?>
 <?php
 
+function show_foreign(){
   //try-catchで接続エラーを取得＆表示
   try{
     $pdo_object=
@@ -20,31 +22,23 @@
   $query -> execute();
 
 
-
   $youga_query = $query->fetchAll(PDO::FETCH_ASSOC);
   //var_dump($youga_query);
 
-  function shuffle_assoc($list) {
-      if (!is_array($list)) return $list;
-      $keys = array_keys($list);
-      shuffle($keys);
-      $random = array();
-      foreach ($keys as $key) {
-          $random[$key] = $list[$key];
-      }
-      return $random;
-  }
-
+  //配列データをシャッフルさせる
   $result = shuffle_assoc($youga_query);
 
     $i = 0;
-    $view = 9;
+    $view = 3;
     foreach ($result as $value){
       if($i>=$view){
         break;
       }else{
   ?>
-  <a href="<?php echo $value["FilmUrl"];?>" target="window"> <img src="<?php echo $value["ImageUrl"];?>" width="200" height="200"></a>
+  <article>
+  <a href="<?php echo $value["FilmUrl"];?>" target="window"> <img src="<?php echo $value["ImageUrl"];?>" width="300" height="363"></a>
+  <a href="<?php echo $value["FilmUrl"];?>" target="window"><h2><?php echo $value["FilmTitle"];?></h2></a>
+  </article>
   <?php
       $i++;
       }
@@ -52,5 +46,5 @@
 
   //接続を切断
   $pdo_object = null;
-
-  ?>
+}
+?>
