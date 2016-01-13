@@ -343,8 +343,9 @@ a:hover{color: #996600;}
 }
 
 /*---------------紹介DVD---------------*/
+/*----------洋画DVD----------*/
 #pageBody .portfolioIndex_A{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #pageBody .portfolioIndex_A:after{
@@ -370,8 +371,9 @@ a:hover{color: #996600;}
   text-align: center;
 }
 
+/*-------邦画DVD---------*/
 #pageBody .portfolioIndex_B{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #pageBody .portfolioIndex_B:after{
@@ -396,6 +398,7 @@ a:hover{color: #996600;}
   line-height: 1.5;
   text-align: center;
 }
+
 
 /*------------「お問い合わせ」ページ------------*/
 
