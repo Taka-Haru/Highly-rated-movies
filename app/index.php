@@ -1,3 +1,6 @@
+<?php require_once 'show_foreign.php';?>
+<?php require_once 'show_japanese.php';?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -33,62 +36,14 @@
     </section>
 
     <section class="portfolioIndex_A">
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/4070605/"target="window">
-          <img src="../image/StarWars4.jpg" alt="エピソード４" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/4070605/"target="window">
-          <h2>スターウォーズⅣ</h2>
-        </a>
-      </article>
-
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/4070606/"target="window">
-          <img src="../image/StarWars5.jpg" alt="エピソード５" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/4070606/"target="window">
-          <h2>スターウォーズⅤ</h2>
-        </a>
-      </article>
-
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/4070607/"target="window">
-          <img src="../image/StarWars6.jpg" alt="エピソード６" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/4070607/"target="window">
-          <h2>スターウォーズⅥ</h2>
-        </a>
-      </article>
+        <?php show_foreign();?>
     </section>
 
-      <section class="portfolioIndex_B">
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/1793720/"target="window">
-          <img src="../image/StarWars1.jpg" alt="エピソード１" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/1793720/"target="window">
-          <h2>スターウォーズⅠ</h2>
-        </a>
-      </article>
-
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/1793721/"target="window">
-          <img src="../image/StarWars2.jpg" alt="エピソード２" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/1793721/"target="window">
-          <h2>スターウォーズⅡ</h2>
-        </a>
-      </article>
-
-      <article>
-        <a href="http://books.rakuten.co.jp/rb/1793713/"target="window">
-          <img src="../image/StarWars3.jpg" alt="エピソード３" width="300" height="163">
-        </a>
-        <a href="http://books.rakuten.co.jp/rb/1793713/"target="window">
-          <h2>スターウォーズⅢ</h2>
-        </a>
-      </article>
+    <section class="portfolioIndex_B">
+        <?php show_japanese();?>
     </section>
+
+
   <!-- pageBodyタグ終了 --></div>
 
   <!-- ページの先頭に戻る処理-->
