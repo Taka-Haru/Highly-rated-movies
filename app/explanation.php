@@ -46,7 +46,7 @@
             <a href="http://books.rakuten.co.jp/rb/12199326/"target="window">
               <div class="movieListText">
                 <h2>レオン</h2>
-                <p>「私が欲しいのは、愛か死よ」　　by マチルダ<br><br>「俺に必要なのは……ミルクだ」　by レオン<p>
+                <p>「私が欲しいのは、愛か死よ」<br>「俺に必要なのは……ミルクだ」<p>
               </div>
               <div class="movieListImage">
               <img src="../image/LEON.jpg" alt="レオン" width="300" height="163">
@@ -58,7 +58,7 @@
             <a href="http://books.rakuten.co.jp/rb/12062429/"target="window">
               <div class="movieListText">
                 <h2>ファイト・クラブ</h2>
-                <p>・ルールその１<br>　ファイトクラブについて話すな。<br><br>・ルールその２<br>　ファイトクラブについて話すな。</p>
+                <p>・ルールその１<br>ファイトクラブについて話すな。<br>・ルールその２<br>　ファイトクラブについて話すな。</p>
               </div>
               <div class="movieListImage">
               <img src="../image/FightClub.jpg" alt="ファイト・クラブ" width="300" height="163">
