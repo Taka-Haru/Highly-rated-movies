@@ -127,14 +127,14 @@ a:hover{color: #996600;}
   /*background-color: #66CCFF;*/
 }
 
-/*ページボディメイン*/
+/*ページボディメイン(作品詳細ページ)*/
 #pageBodyMain_detail{
   width: 470px;
   float: left;
   /*background-color: #66CCFF;*/
 }
 
-/*ページボディサブ*/
+/*ページボディサブ(作品詳細ページ)*/
 #pageBodySub{
   width: 470px;
   float: right;
