@@ -1,31 +1,27 @@
 <!-- 邦画のデータをDBに -->
 
-<?php require_once './dbaccesUtil.php'; ?>
+<?php require_once '../common/dbaccesUtil.php'; ?>
 
 <?php
   //APIのURL
   $API_URL = 'https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?';
   //取得したいキーワード
   $keyword='';
-  //reviewAverage:レビューの評価(平均)が高い
-  //$sort='reviewAverage';
-  //reviewAverage:レビュー件数
-  //$page=3:取得ページ
+
+  // レビューの件数が多い
   $sort='reviewCount';
   $sort=urlencode(mb_convert_encoding($sort,'UTF-8','auto'));
-  //1ページあたりの取得件数
-  $hits= 1;
-  //楽天ジャンルリスト(映画) 001011002
+  //楽天ジャンルリスト(映画)
   $booksGenreId='003202';
-
   //アプリID
   $applicationId='1008945889381802438';//自分のアプリIDを入れる
 
 
-  //リクエストURL
-  $kobo_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'1';
+
+  //リクエストURL(1ページ目)
+  $books_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'1';
   //XMLを取得
-  $xml=simplexml_load_string(file_get_contents($kobo_url));
+  $xml=simplexml_load_string(file_get_contents($books_url));
 
   foreach((object) $xml->Items->Item as $item){
 
@@ -43,20 +39,23 @@
     $reviewCount=$item->reviewCount;
     //レビュー平均
     $reviewAverage=$item->reviewAverage;
+    // 商品説明文
+    $itemCaption=$item->itemCaption;
+
 
     if($reviewCount>30 &&  $reviewAverage>3.5){
     echo '<a href="'.$url.'" target="window"><img src="'.$img.'" /></a>';
 
     //データのDB挿入処理。エラーの場合のみエラー文がセットされる。成功すればnull
-    $result = insert_youga($title, $url, $img, $movie_type);
+    $result = insert_movies($title, $url, $img, $movie_type, $itemCaption);
 
     }
   }
 
-  //リクエストURL
-  $kobo_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'2';
+  //リクエストURL(1ページ目)
+  $books_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'2';
   //XMLを取得
-  $xml=simplexml_load_string(file_get_contents($kobo_url));
+  $xml=simplexml_load_string(file_get_contents($books_url));
 
   foreach((object) $xml->Items->Item as $item){
 
@@ -74,20 +73,23 @@
     $reviewCount=$item->reviewCount;
     //レビュー平均
     $reviewAverage=$item->reviewAverage;
+    // 商品説明文
+    $itemCaption=$item->itemCaption;
+
 
     if($reviewCount>30 &&  $reviewAverage>3.5){
     echo '<a href="'.$url.'" target="window"><img src="'.$img.'" /></a>';
 
     //データのDB挿入処理。エラーの場合のみエラー文がセットされる。成功すればnull
-    $result = insert_youga($title, $url, $img, $movie_type);
+    $result = insert_movies($title, $url, $img, $movie_type, $itemCaption);
 
     }
   }
 
-  //リクエストURL
-  $kobo_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'3';
+  //リクエストURL(1ページ目)
+  $books_url=$API_URL.'format=xml&applicationId='.$applicationId.'&booksGenreId='.$booksGenreId.'&sort='.$sort.'&page='.'3';
   //XMLを取得
-  $xml=simplexml_load_string(file_get_contents($kobo_url));
+  $xml=simplexml_load_string(file_get_contents($books_url));
 
   foreach((object) $xml->Items->Item as $item){
 
@@ -105,14 +107,16 @@
     $reviewCount=$item->reviewCount;
     //レビュー平均
     $reviewAverage=$item->reviewAverage;
+    // 商品説明文
+    $itemCaption=$item->itemCaption;
+
 
     if($reviewCount>30 &&  $reviewAverage>3.5){
-    //echo '<a href="'.$url.'" target="window"><img src="'.$img.'" /></a>';
+    echo '<a href="'.$url.'" target="window"><img src="'.$img.'" /></a>';
 
     //データのDB挿入処理。エラーの場合のみエラー文がセットされる。成功すればnull
-    $result = insert_youga($title, $url, $img, $movie_type);
+    $result = insert_movies($title, $url, $img, $movie_type, $itemCaption);
 
     }
   }
-
 ?>
