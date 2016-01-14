@@ -127,9 +127,16 @@ a:hover{color: #996600;}
   /*background-color: #66CCFF;*/
 }
 
+/*ページボディメイン*/
+#pageBodyMain_detail{
+  width: 470px;
+  float: left;
+  /*background-color: #66CCFF;*/
+}
+
 /*ページボディサブ*/
 #pageBodySub{
-  width: 220px;
+  width: 470px;
   float: right;
   /*background-color: #99FF66;*/
 }
@@ -296,7 +303,7 @@ a:hover{color: #996600;}
 #pageBodyMain .articleList a .movieListText h2{
   font-size: 20px;
   line-height: 1.308;
-  color: #FF0000;
+  color: #99FF66;
 }
 
 #pageBodyMain .articleList a .movieListText p{
@@ -337,11 +344,17 @@ a:hover{color: #996600;}
 }
 
 #pageBody .mainVisual .mainVisualText h1{
-  font-size: 26px;
+  font-size: 35px;
   line-height: 1.231;
   margin: 0;
+  color: #99FF66;
 }
 
+#pageBody .mainVisual .mainVisualText p{
+  margin: 0;
+  font-size: 21px;
+  font-family:cursive;
+}
 /*---------------紹介DVD---------------*/
 /*----------洋画DVD----------*/
 #pageBody .portfolioIndex_A{
@@ -371,6 +384,11 @@ a:hover{color: #996600;}
   text-align: center;
 }
 
+#pageBody .portfolioIndex_A article form{
+  text-align: center;
+}
+
+
 /*-------邦画DVD---------*/
 #pageBody .portfolioIndex_B{
   margin-top: 50px;
@@ -396,6 +414,10 @@ a:hover{color: #996600;}
   font-size: 18px;
   margin:5px 0;
   line-height: 1.5;
+  text-align: center;
+}
+
+#pageBody .portfolioIndex_B article form{
   text-align: center;
 }
 
