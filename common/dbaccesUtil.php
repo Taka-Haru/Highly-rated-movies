@@ -14,14 +14,14 @@ function connect2MySQL(){
 
 
 //レコードの挿入を行う。失敗した場合はエラー文を返却する
-  function insert_youga($title, $url, $img, $movie_type){
+  function insert_movies($title, $url, $img, $movie_type, $itemCaption){
 
     //db接続を確立
     $insert_db = connect2MySQL();
 
     //DBに全項目のある1レコードを登録するSQL
-    $insert_sql = "INSERT INTO movies(FilmTitle,FilmUrl,ImageUrl,movie_type)"
-            . "VALUES(:FilmTitle,:FilmUrl,:ImageUrl,:movie_type)";
+    $insert_sql = "INSERT INTO movies(FilmTitle,FilmUrl,ImageUrl,movie_type,itemCaption)"
+            . "VALUES(:FilmTitle,:FilmUrl,:ImageUrl,:movie_type,:itemCaption)";
 
     // //現在時をdatetime型で取得
     // $datetime =new DateTime();
@@ -35,6 +35,7 @@ function connect2MySQL(){
     $insert_query->bindValue(':FilmUrl',$url);
     $insert_query->bindValue(':ImageUrl',$img);
     $insert_query->bindValue(':movie_type',$movie_type);
+    $insert_query->bindValue(':itemCaption',$itemCaption);
 
     //SQLを実行
     try{
