@@ -1,4 +1,6 @@
 <?php require_once '../common/scriptUtil.php';?>
+<?php require_once '../common/defineUtil.php';?>
+
 <?php
 
 function show_foreign(){
@@ -38,6 +40,12 @@ function show_foreign(){
   <article>
   <a href="<?php echo $value["FilmUrl"];?>" target="window"> <img src="<?php echo $value["ImageUrl"];?>" width="300" height="363"></a>
   <a href="<?php echo $value["FilmUrl"];?>" target="window"><h2><?php echo $value["FilmTitle"];?></h2></a>
+
+  <form action="<?php echo MOVIE_DETAIL; ?>" method="POST">
+    <input type="hidden" name="mode" value="$value["FilmTitle"]">
+    <input type="submit" name="detail" value="作品詳細";>
+  </form>
+
   </article>
   <?php
       $i++;
