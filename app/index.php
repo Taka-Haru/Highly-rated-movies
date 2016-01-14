@@ -28,7 +28,7 @@
   <div id="pageBody">
     <section class="mainVisual">
       <div class="mainVisualText">
-        <h1>Today Movies</h1>
+        <h1>本日のおすすめ</h1>
         <p>良作映画紹介サービス<br>
         〜何を観るか迷っているあなたへ〜</p>
       </div>
@@ -57,7 +57,7 @@
       if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
       fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     </script>
-    
+
     <p id="copyright"><small>Copyright&copy; 2016 @HighlyRatedMovies All Rights Reserved.</small></p>
   </footer>
 
