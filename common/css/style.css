@@ -1,3 +1,4 @@
+
 body{
   color: #333333;
 }
@@ -328,6 +329,41 @@ a:hover{color: #996600;}
   vertical-align: bottom;
 }
 
+/*撮影情報*/
+#pageBodyMain .creditUnit{
+  padding: 10px;
+  border: solid 1px #CCCCCC;
+}
+
+#pageBodyMain .creditUnit:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#pageBodyMain .creditUnit .creditUnitText{
+  float: right;
+  margin-top: auto;
+  width: 350px;
+}
+
+#pageBodyMain .creditUnit .creditUnitMap{
+  float: left;
+  width: 300px;
+}
+
+#pageBodyMain .creditUnit .creditUnitMap
+iframe{
+  margin-top: 20px;
+  vertical-align: bottom;
+}
+
+#pageBodyMain .creditUnit p{
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
 /*-----------トップページの内容-----------------*/
 
 /*---------メインビジュアル-------------*/
@@ -359,10 +395,22 @@ a:hover{color: #996600;}
 }
 
 #pageBody .mainVisual .mainVisualText p{
-  margin: 0;
-  font-size: 21px;
+  margin-bottom: 0;
+  line-height: 1.5
+  font-size: 12px;
   font-family:cursive;
 }
+
+#pageBody .mainVisual ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#pageBody .mainVisual ul li{
+  position: relative;
+}
+
 /*---------------紹介DVD---------------*/
 /*----------洋画DVD----------*/
 #pageBody .portfolioIndex_A{
