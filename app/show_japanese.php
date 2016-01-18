@@ -41,11 +41,13 @@ function show_japanese(){
       }else{
   ?>
   <article>
-  <form action="<?php echo MOVIE_DETAIL; ?>" method="POST">
     <a href="<?php echo $value["FilmUrl"];?>" target="window"> <img src="<?php echo $value["ImageUrl"];?>" width="300" height="363"></a>
     <a href="<?php echo $value["FilmUrl"];?>" target="window"><h2><?php echo $value["FilmTitle"];?></h2></a>
 
-    <input type="hidden" name="mode" value="$value["FilmTitle"]">
+
+  <form action="<?php echo MOVIE_DETAIL; ?>?id=<?php echo $value['FilmID'];?>" method="POST">
+    <input type="hidden" name="FilmTitle" value="<?php echo $value['FilmTitle'];?>";>
+    <input type="hidden" name=" itemCaption" value="<?php echo $value['itemCaption'];?>";>
     <input type="submit" name="detail" value="作品詳細";>
   </form>
 
