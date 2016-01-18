@@ -5,7 +5,7 @@
 //APIのURL
 $API_URL = 'https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?';
 //取得したいキーワード
-$keyword='';
+//$keyword='';
 
 // レビューの件数が多い
 $sort='reviewCount';
@@ -14,6 +14,7 @@ $sort=urlencode(mb_convert_encoding($sort,'UTF-8','auto'));
 $hits= 1;
 //楽天ジャンルリスト(映画)
 $booksGenreId='003201';
+
 //アプリID
 $applicationId='1008945889381802438';//自分のアプリIDを入れる
 
