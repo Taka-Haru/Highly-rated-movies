@@ -8,6 +8,21 @@
     <title>HighlyRatedMovies</title>
     <link rel="stylesheet" href="../common/css/normalize.css">
     <link rel="stylesheet" href="../common/css/style.css">
+
+<script src="../common/js/jquery-1.12.0.min.js"></script>
+<script src="../common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="../common/js/jquery.bxslider/jquery.bxslider.css">
+<!-- bxsliderを適用する -->
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    pause:4000
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -27,12 +42,34 @@
 
   <div id="pageBody">
     <section class="mainVisual">
-      <div class="mainVisualText">
-        <h1>本日のおすすめ</h1>
-        <p>良作映画紹介サービス<br>
-        〜何を観るか迷っているあなたへ〜</p>
-      </div>
-      <img src="../image/img_01_01.jpg" width="980" height="500" alt="ランダム画像">
+      <ul class="bxslider">
+        <li>
+          <div class="mainVisualText">
+            <h1>本日のおすすめ</h1>
+            <p>良作映画紹介サービス<br>
+            〜何を観るか迷っているあなたへ〜</p>
+          </div>
+          <img src="../image/img_01_01.jpg" width="980" height="500" alt="ランダム画像">
+        </li>
+
+        <li>
+          <div class="mainVisualText">
+            <h1>本日のおすすめ</h1>
+            <p>良作映画紹介サービス<br>
+            〜何を観るか迷っているあなたへ〜</p>
+          </div>
+          <img src="../image/ターミネーター２.jpg" width="980" height="500" alt="ランダム画像">
+        </li>
+
+        <li>
+          <div class="mainVisualText">
+            <h1>本日のおすすめ</h1>
+            <p>良作映画紹介サービス<br>
+            〜何を観るか迷っているあなたへ〜</p>
+          </div>
+          <img src="../image/ダークナイト.jpg" width="980" height="500" alt="ランダム画像">
+        </li>
+      </ul>
     </section>
 
     <!-- 洋画表示関数呼び出し -->
