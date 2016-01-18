@@ -47,15 +47,20 @@
 
 
         <footer class="articleDetailFoot">
-          <aside>
-            <p>〜サイト作成協力〜</p>
-            <h2 class="heading-typeC">グルーヴ・ギア株式会社</h2>
-            <p>地下鉄九段下駅より徒歩１分</p>
-            <ul>
-              <li><a href="http://www.groove-gear.jp/" target="_blank">http://www.groove-gear.jp/</a></li>
-              <li><a href="https://camp.geekjob.jp/?_ga=1.84169246.649395329.1446601110" target="_blank">GeekJobCamp ページ</a></li>
-            </ul>
-            <P>是非あなたもプログラミングキャンプに参加しませんか？</p>
+          <aside class="creditUnit">
+            <div class="creditUnitText">
+              <p>〜サイト作成協力〜</p>
+              <h2 class="heading-typeC">グルーヴ・ギア株式会社</h2>
+              <p>地下鉄九段下駅より徒歩１分</p>
+              <ul>
+                <li><a href="http://www.groove-gear.jp/" target="_blank">http://www.groove-gear.jp/</a></li>
+                <li><a href="https://camp.geekjob.jp/?_ga=1.84169246.649395329.1446601110" target="_blank">GeekJobCamp ページ</a></li>
+              </ul>
+              <P>是非あなたもプログラミングキャンプに参加しませんか？</p>
+             </div>
+             <div class="creditUnitMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.2958888511483!2d139.75080191803605!3d35.696488225468016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6adec6dcb1%3A0x69c762a509d34f1c!2z44CSMTAyLTAwNzMg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Lmd5q615YyX77yR5LiB55uu77yU4oiS77yRIOODluODq-ODg-OCr-OCueODk-ODq-ODguODs-OCsA!5e0!3m2!1sja!2sjp!4v1453117404880" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </aside>
         </footer>
       </article>
