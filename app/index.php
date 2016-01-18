@@ -35,10 +35,12 @@
       <img src="../image/img_01_01.jpg" width="980" height="500" alt="ランダム画像">
     </section>
 
+    <!-- 洋画表示関数呼び出し -->
     <section class="portfolioIndex_A">
         <?php show_foreign();?>
     </section>
 
+    <!-- 洋画表示関数呼び出し -->
     <section class="portfolioIndex_B">
         <?php show_japanese();?>
     </section>
