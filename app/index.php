@@ -17,8 +17,8 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     auto: true,
-    speed: 1000,
-    pause:4000
+    speed:1000,
+    pause:3000,
   });
 });
 </script>
@@ -26,6 +26,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+
   <div id="page">
   <header id="pageHead">
     <h1 id="siteTitle">HighlyRatedMovies</h1>
@@ -46,8 +47,8 @@ $(document).ready(function(){
         <li>
           <div class="mainVisualText">
             <h1>本日のおすすめ</h1>
-            <p>良作映画紹介サービス<br>
-            〜何を観るか迷っているあなたへ〜</p>
+            <p>〜何を観るか迷っているあなたへ〜<br>
+            洋画と邦画をそれぞれ３本ずつ紹介します</p>
           </div>
           <img src="../image/img_01_01.jpg" width="980" height="500" alt="ランダム画像">
         </li>
@@ -55,23 +56,25 @@ $(document).ready(function(){
         <li>
           <div class="mainVisualText">
             <h1>本日のおすすめ</h1>
-            <p>良作映画紹介サービス<br>
-            〜何を観るか迷っているあなたへ〜</p>
+            <p>〜何を観るか迷っているあなたへ〜<br>
+            洋画と邦画をそれぞれ３本ずつ紹介します</p>
           </div>
           <img src="../image/ターミネーター２.jpg" width="980" height="500" alt="ランダム画像">
         </li>
 
         <li>
           <div class="mainVisualText">
-            <h1>本日のおすすめ</h1>
-            <p>良作映画紹介サービス<br>
-            〜何を観るか迷っているあなたへ〜</p>
+            <h1>今日の映画</h1>
+            <p>〜何を観るか迷っているあなたへ〜<br>
+            洋画と邦画をそれぞれ３本ずつ紹介します</p>
           </div>
           <img src="../image/ダークナイト.jpg" width="980" height="500" alt="ランダム画像">
         </li>
       </ul>
     </section>
 
+  <div class="genre">
+    <h1>〜本日の６作品〜</h1>
     <!-- 洋画表示関数呼び出し -->
     <section class="portfolioIndex_A">
         <?php show_foreign();?>
@@ -81,7 +84,7 @@ $(document).ready(function(){
     <section class="portfolioIndex_B">
         <?php show_japanese();?>
     </section>
-
+  </div>
 
   <!-- pageBodyタグ終了 --></div>
 
